@@ -1,9 +1,10 @@
 import React from "react";
+import { TheLayout } from "./views/pages/TheLayout";
 
 function App() {
   return (
     <div>
-      <h2>This is a Multi ven.</h2>
+      <TheLayout />
     </div>
   );
 }
