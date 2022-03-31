@@ -1,6 +1,7 @@
 import React from "react";
 import { Footer } from "./common/Footer";
 import { Header } from "./common/Header";
+import { Main } from "./common/Main";
 
 export const TheLayout = () => {
   return (
@@ -8,7 +9,9 @@ export const TheLayout = () => {
       <div>
         <Header />
       </div>
-      <main>Body</main>
+      <main>
+        <Main />
+      </main>
       <div>
         <Footer />
       </div>
