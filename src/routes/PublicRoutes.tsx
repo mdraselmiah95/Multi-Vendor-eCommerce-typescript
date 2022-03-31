@@ -1,7 +1,7 @@
-const publicRoutes = [
-  {
-    path: "/",
-    name: "Home",
-    // component:<Home/>
-  },
-];
+// const publicRoutes = [
+//   {
+//     path: "/",
+//     name: "Home",
+//     // component:<Home/>
+//   },
+// ];
