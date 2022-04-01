@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { TheLayout } from "./views/pages/TheLayout";
 
 function App() {
