@@ -1,9 +1,15 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "../home/Home";
 
 export const Main = () => {
   return (
-    <div>
-      <h2>Main</h2>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 };
