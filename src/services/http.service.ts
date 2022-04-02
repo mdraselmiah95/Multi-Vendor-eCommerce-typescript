@@ -1,9 +1,10 @@
-import axios, { AxiosRequestConfig } from "axios";
+import axios, { AxiosInstance, AxiosRequestConfig } from "axios";
 
 const axiosConfig: AxiosRequestConfig = {
-  baseURL: "https://some-domain.com/api/",
-  timeout: 1000,
-  headers: { "X-Custom-Header": "foobar" },
+  baseURL: process.env.REACT_APP_API_BASE_URL,
+  timeout: 15000,
 };
 
-const instance = axios.create(axiosConfig);
+const instance: AxiosInstance = axios.create(axiosConfig);
+
+instance.get("/product").then((res) => res.data);
