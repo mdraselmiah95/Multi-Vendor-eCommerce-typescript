@@ -1,4 +1,4 @@
-import axios, { AxiosInstance, AxiosRequestConfig } from "axios";
+import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
 
 const axiosConfig: AxiosRequestConfig = {
   baseURL: process.env.REACT_APP_API_BASE_URL,
@@ -10,16 +10,16 @@ const instance: AxiosInstance = axios.create(axiosConfig);
 // instance.get("/product").then((res) => res.data);
 
 class Request {
-  get(url: string) {
+  async get(url: string): Promise<AxiosResponse> {
     return instance.get(url);
   }
-  post(url: string, body) {
+  async post(url: string, body): Promise<AxiosResponse> {
     return instance.post(url, body);
   }
-  update(url: string, body) {
+  async update(url: string, body): Promise<AxiosResponse> {
     return instance.patch(url, body);
   }
-  delete(url: string) {
+  async delete(url: string): Promise<AxiosResponse> {
     return instance.delete(url);
   }
 }
