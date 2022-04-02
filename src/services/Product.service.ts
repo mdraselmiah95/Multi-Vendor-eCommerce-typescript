@@ -6,3 +6,5 @@ class ProductService {
     return data;
   }
 }
+
+export default new ProductService();
