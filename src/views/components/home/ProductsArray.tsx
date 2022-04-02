@@ -1,11 +1,11 @@
 import React from "react";
 import ProductCard from "../common/ProductCard";
 
-export const ProductsArray = () => {
+export const ProductsArray = ({ products }: { products: any[] }) => {
   return (
     <div>
-      {[1, 2, 3, 4].map((item) => (
-        <ProductCard />
+      {products.map((product) => (
+        <ProductCard product={product} />
       ))}
     </div>
   );

@@ -1,14 +1,14 @@
 import React from "react";
 
-export default function ProductCard() {
+export default function ProductCard({ product }: { product: any }) {
   return (
     <div>
       <div>
         <img src="" alt="" />
       </div>
       <div>
-        <h4>Product Title</h4>
-        <p>Product Price</p>
+        <h4>{product}</h4>
+        <p>{product}</p>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import DSlider from "../../components/custom/DSlider";
 import { ProductsArray } from "../../components/home/ProductsArray";
 
 const Home = () => {
-  const [products, setProducts] = useState();
+  const [products, setProducts] = useState<[] | any[]>([]);
 
   useEffect(() => {
     ProductService.getAllProducts()
@@ -18,7 +18,7 @@ const Home = () => {
         <DSlider />
       </div>
       <div>
-        <ProductsArray />
+        <ProductsArray products={products} />
       </div>
     </main>
   );
